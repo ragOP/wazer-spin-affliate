@@ -75,7 +75,7 @@
   <link href="css/styles.min.css" rel="stylesheet" type="text/css">
   <style>
         .site__hero {
-            background-image: url(images/background-hero-mobile.jpg);
+            /* background-image: url(images/background-hero-mobile.jpg); */
             background-repeat: no-repeat;
             background-size: cover;
             max-width: 100vw;
@@ -103,7 +103,7 @@
 
         @media only screen and (min-width:1000px) {
             .site__hero {
-                background-image: url(images/background-hero-desktop.jpg);
+                /* background-image: url(images/background-hero-desktop.jpg); */
             }
             .subpage .site__hero {
                 background-size: 100%;
@@ -177,6 +177,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <section class="site__hero">
+    <video autoplay muted loop playsinline style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
+        <source src="vid2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <header>
     <nav class="nav__mobile">
         <ul>
