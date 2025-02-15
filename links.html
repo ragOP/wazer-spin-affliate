@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAGER Affiliate Landers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 10px 0;
+        }
+        .link-list a {
+            display: block;
+            background: #113e7d;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .link-list a:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <h1>WAGER Affiliate Landers</h1>
+    <input type="text" id="search" placeholder="Search links..." onkeyup="filterLinks()">
+    <div class="container">
+        <ul class="link-list" id="linkList">
+            <li><a href="https://wazer-affilate-lander.vercel.app/">Lander 1</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/third.html">Third</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/fourth.html">Fourth</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/fifth.html">Fifth</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/eight.html">Eight</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/nine.html">Nine</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/ten.html">Ten</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/twelve.html">Twelve</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/thirteen.html">Thirteen</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/fourteen.html">Fourteen</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/fifteen.html">Fifteen</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/sixteen.html">Sixteen</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/seventeen.html">Seventeen</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/e.html">E</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/e2.html">E2</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/e3.html">E3</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/e4.html">E4</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/88.html">88</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/89.html">89</a></li>
+            <li><a href="https://wazer-affilate-lander.vercel.app/90.html">90</a></li>
+        </ul>
+    </div>
+    <script>
+        function filterLinks() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let links = document.querySelectorAll(".link-list li");
+            links.forEach(link => {
+                let text = link.innerText.toLowerCase();
+                link.style.display = text.includes(input) ? "block" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
